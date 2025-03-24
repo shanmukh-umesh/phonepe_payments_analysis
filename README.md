@@ -1,6 +1,6 @@
-# PhonePe Pulse Data Analysis
+# PhonePe Payments Data Analysis
 
-A project focused on analyzing PhonePe Pulse data to gain insights into transaction patterns, user behavior, and the impact of the COVID-19 pandemic on digital payments. Actionable recommendations are provided to enhance user experience, service utilization, and transaction growth.
+A project focused on analyzing PhonePe Payments data to gain insights into transaction patterns, user behavior, and the impact of the COVID-19 pandemic on digital payments. Actionable recommendations are provided to enhance user experience, service utilization, and transaction growth.
 
 ## Table of Contents
 - [Project Overview](#project-overview)
@@ -14,7 +14,7 @@ A project focused on analyzing PhonePe Pulse data to gain insights into transact
 
 ## Project Overview
 
-This project analyzes PhonePe Pulse data to understand user distribution, transaction volumes, and device usage across different states and districts of India. It also explores the effect of the COVID-19 pandemic on transaction patterns and provides recommendations to enhance service usage and customer retention.
+This project analyzes PhonePe Payments data to understand user distribution, transaction volumes, and device usage across different states and districts of India. It also explores the effect of the COVID-19 pandemic on transaction patterns and provides recommendations to enhance service usage and customer retention.
 
 ## Goals
 
