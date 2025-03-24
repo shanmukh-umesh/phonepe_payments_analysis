@@ -1,6 +1,6 @@
 # PhonePe Pulse Data Analysis
 
-A project focused on analyzing transaction and user data from PhonePe Pulse to understand user distribution, transaction volumes, and other metrics across various states and districts in India.
+A project focused on analyzing PhonePe Pulse data to gain insights into transaction patterns, user behavior, and the impact of the COVID-19 pandemic on digital payments. Actionable recommendations are provided to enhance user experience, service utilization, and transaction growth.
 
 ## Table of Contents
 - [Project Overview](#project-overview)
@@ -9,51 +9,83 @@ A project focused on analyzing transaction and user data from PhonePe Pulse to u
 - [Dataset](#dataset)
 - [Analysis and Findings](#analysis-and-findings)
 - [Conclusion](#conclusion)
+- [Actionable Recommendations](#actionable-recommendations)
 - [Future Work](#future-work)
 
 ## Project Overview
 
-This project analyzes PhonePe Pulse data to gain insights into user engagement and transaction trends across India. It explores data points like transaction volumes, device usage, and demographic details at both the state and district levels.
+This project analyzes PhonePe Pulse data to understand user distribution, transaction volumes, and device usage across different states and districts of India. It also explores the effect of the COVID-19 pandemic on transaction patterns and provides recommendations to enhance service usage and customer retention.
 
 ## Goals
 
-- **Transaction Analysis:** Understand transaction patterns and volumes across different states and districts.
-- **User Segmentation:** Analyze user behavior based on geographic distribution and transaction categories.
-- **Device Data Analysis:** Explore the device types used by PhonePe users and their transaction preferences.
+- **Analyze transaction patterns:** Understand how transaction volumes and user engagement vary across different states and districts.
+- **Identify key trends:** Observe trends before, during, and after the COVID-19 pandemic.
+- **Improve service utilization:** Provide recommendations to increase adoption of underutilized services like financial payments.
 
 ## Technologies Used
 
-- **Python**: Data manipulation and analysis.
-- **Pandas**: For handling dataframes and data cleaning.
+- **Python**: For data analysis and manipulation.
+- **Pandas**: To work with structured data.
 - **NumPy**: For numerical computations.
-- **Matplotlib/Seaborn**: For data visualization.
-- **Excel**: Data was sourced and pre-processed using Excel sheets.
 
 ## Dataset
 
-The dataset comprises multiple sheets of transactional and user data, including:
-- **State-wise Transaction Data**: Contains data on transaction volumes, types, and user demographics for each state.
-- **District-wise Transaction Data**: More granular data showing transaction patterns at the district level.
-- **Device Data**: Information about the types of devices being used by PhonePe users.
+The dataset consists of multiple sheets capturing state-wise and district-wise PhonePe transaction and user data, including:
+- **Transaction data**: Total number of transactions, transaction volume, and breakdown by sector (P2P, merchant payments, etc.).
+- **User data**: Number of registered users by state, device types, and population demographics.
 
 ## Analysis and Findings
 
-### State-wise Transactions
-- The dataset was used to analyze state-level transaction patterns, identifying key states with high transaction volumes and user engagement.
+### Key Findings
 
-### District-level Transactions
-- Granular analysis at the district level to observe localized patterns and trends in PhonePe usage.
-
-### Device Data Insights
-- The analysis explored the distribution of devices used for PhonePe transactions and how they relate to transaction volumes.
+1. **Strong correlation** observed between the number of transactions and the total amount.
+2. In some states, the **ratio of registered users to the overall population exceeds 100%**.
+3. Nearly **75% of registered users** belong to five brands: Xiaomi, Vivo, Samsung, Realme, and Oppo.
+![Device Brand Usage by Each State](images/device_brand_usage.png)
+4. A **downward trend** in transactions, total amount, and app opens during the COVID-19 pandemic, except for registered user growth.
+5. **Upward trend** after Q2 2020, driven by the shift towards digitalization.
+6. **P2P and merchant payments** dominate transaction volumes, while financial services and others contribute the least.
+![Sector Volumes](images/sector_volumes.png)   
+7. The **recharge and bills sector** was the only sector unaffected by the pandemic.
+8. The **average growth rate remained stable** after mid-2019, with minimal quarterly variations.
+![Average Registers GrowthRate](images/reg_users_growth_rate_by_state.png) 
+9. **High volatility** observed in the overall growth rate of transactions.
+10. A **weak correlation** was observed between population density and transaction volume across states.
 
 ## Conclusion
 
-- **High User Engagement in Key States:** Certain states showed significantly higher transaction volumes, suggesting stronger digital payment adoption in those regions.
-- **Device Usage Trends:** A clear correlation between device types and transaction behaviors was observed, providing insights into user preferences.
+The analysis revealed that digital payments have shown resilience during the pandemic, with strong growth in user registrations and recovery in transaction volumes post-pandemic. However, there are significant opportunities to increase engagement with financial services and lesser-used services.
+
+## Actionable Recommendations
+
+### 1. Enhance Financial Service Utilization
+
+- **Raise awareness** of financial services like insurance payments, mutual funds, and loans through targeted digital campaigns.
+- **Collaborate with financial institutions** to provide bundled services directly through the platform.
+
+### 2. Boost Adoption of Lesser-Used Services
+
+- **Run promotions** for underutilized services to increase awareness and adoption.
+- **Expand the 'Others' category** to include day-to-day activities like public transport tickets and parking payments.
+
+### 3. Improve Growth of Transactions and App Users
+
+- **Enhance user experience**: Simplify the user journey and use AI to recommend personalized offers and discounts based on user behavior.
+- **Introduce reward programs**: Offer loyalty points or cashback to frequent users.
+- **Gamification**: Add features like challenges, leaderboards, and rewards to drive user engagement.
+
+### 4. Target Existing Users
+
+- **Promote additional features**: Encourage users to explore other services they haven't used.
+- **Predictive analytics**: Anticipate when users are likely to stop using the platform and offer retention strategies like discounts or cashback.
+- **Reactivate inactive users**: Launch campaigns to encourage re-engagement with inactive users.
+
+### 5. Enhance P2P and Merchant Payments
+
+Since P2P and merchant payments dominate transaction volumes:
+- **Introduce convenient features** like instant refunds and credit options to retain users.
 
 ## Future Work
 
-- **Predictive Analysis**: Use machine learning to predict future transaction volumes based on historical data.
-- **Real-Time Dashboard**: Develop a dashboard for real-time tracking of PhonePe transactions and user statistics.
-
+- **Predictive Modeling**: Implement machine learning models to forecast transaction growth and user behavior trends.
+- **Real-Time Analytics Dashboard**: Develop a dashboard for real-time tracking of key metrics such as transaction volumes, user growth, and sector performance.
